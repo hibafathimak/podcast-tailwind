@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>podcast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-zinc-900 text-gray-200 text-poppins">
+    <header>
+        <nav class="flex text-white justify-between items-center w-[95%] py-3 mx-auto">
+            <div class="flex">
+                <i class="fa-solid fa-headset fa-2xl" style="color: #fb994a;"></i>
+            </div>
+            <div class="md:static absolute bg-zinc-900 md:min-h-fit min-h-[60vh] top-[9%] md:w-auto left-0 w-full flex md:items-center px-2 md:px-5">
+                <ul class="flex md:flex-row flex-col items-center md:gap-[4vw] gap-8 md:mx-16 text-sm md:text-lg">
+                    <li><a class="hover:text-gray-500" href="">Home</a></li>
+                    <li><a class="hover:text-gray-500" href="">Podcasts</a></li>
+                    <li><a class="hover:text-gray-500" href="">Episodes</a></li>
+                </ul>
+            </div>
+            <div> <button class="bg-orange-400 text-white rounded-full px-5 py-2 hover:bg-orange-600">Sign Up</button></div>
+        </nav>
+    </header>
+    <section class="min-h-screen flex items-center justify-center">
+        <div
+            class="max-w-[1024px] w-[90%] mx-auto flex items-center justify-center flex-col-reverse md:flex-row gap-10">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-[60px] uppercase leading-tight font-bold text-orange-400">The Audio People
+                </h1>
+                <p class="text-sm md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit
+                    pariatur maiores enim natus vero iste ex, saepe dolorem. Natus distinctio facilis cupiditate dolores
+                    neque cumque laboriosam libero pariatur soluta</p>
+                <button
+                    class="inline-block bg-orange-400 text-white rounded-full px-5 py-2 mt-3 hover:bg-orange-600">Start
+                    Listening</button>
+            </div>
+            <div class="flex-1">
+                <div class="w-full h-[50vh] md:h-screen overflow-hidden relative">
+                    <img class="w-full h-full md:h-[150vh] object-contain md:absolute md:top-[-25%]"
+                        src="./images/hero_section_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="min-h-screen flex items-center justify-center bg-zinc-100 py-[100px] text-gray-200" >
+        <div class="max-w-[1024px] w-[90%] mx-auto">
+            <div class="text-center max-w-lg mx-auto">
+                <h1 class="text-4xl md:text-[80px] mb-10 font-bold text-orange-400">The Hosts</h1>
+                <p class="text-sm md:text-base text-gray-700 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Iure facilis quidem praesentium deserunt, impedit fuga minus accusantium hic.</p>
+            </div>
+            <div class="flex flex-col gap-5 mt-11 md:flex-row ">
+                <div class="bg-zinc-900  p-5 rounded-xl flex-1">
+                    <img src="./images/host-1.png" class="rounded-lg object-cover w-full" alt="">
+                    <h2 class="text-orange-400 text-xl font-medium mt-3">Kalam Azad</h2>
+                    <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                        doloremque laborum vero harum</p>
+                </div>
+                <div class="bg-zinc-900 p-5 rounded-xl flex-1">
+                    <img src="./images/host-2.png" class="rounded-lg object-cover w-full" alt="">
+                    <h2 class="text-orange-400 text-xl font-medium mt-3">Jason Wells</h2>
+                    <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                        doloremque laborum vero harum</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class=" flex items-center justify-center py-[50px]">
+        <div class="max-w-[1024px] w-[90%] mx-auto">
+            <h1 class="text-orange-400 text-4xl md:text-[50px] leading-snug font-bold text-center">Most Listened <br> Episodes </h1>
+            <div class="mt-10 max-w-[100%] overflow-x-auto rounded-lg">
+                <table class="w-fit bg-neutral-800 rounded-lg min-w-[600px] text-center mx-auto overflow-hidden">
+                    <thead>
+                        <tr class="bg-zinc-700">
+                            <th class="p-3">Guest</th>
+                            <th class="p-3">Date</th>
+                            <th class="p-3">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-500">
+                            <td class="p-3">John Doe, Hasan Rahid</td>
+                            <td class="p-3">05/06/2024</td>
+                            <td class="p-3"><a href=""
+                                    class="inline-block bg-transparent py-1 px-4 font-medium text-sm border border-orange-400 rounded-full hover:bg-orange-500">Listen</a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-500">
+                            <td class="p-3">Riley ,Beck Hudson</td>
+                            <td class="p-3">05/06/2024</td>
+                            <td class="p-3"><a href=""
+                                    class="inline-block bg-transparent py-1 px-4 font-medium text-sm border border-orange-400 rounded-full hover:bg-orange-500">Listen</a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-500">
+                            <td class="p-3">Mills Fuller, Rosie George</td>
+                            <td class="p-3">05/06/2024</td>
+                            <td class="p-3"><a href=""
+                                    class="inline-block bg-transparent py-1 px-4 font-medium text-sm border border-orange-400 rounded-full hover:bg-orange-500">Listen</a>
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="p-3">Cloe, Blake Wiley</td>
+                            <td class="p-3">05/06/2024</td>
+                            <td class="p-3"><a href=""
+                                    class="inline-block bg-transparent py-1 px-4 font-medium text-sm border border-orange-400 rounded-full hover:bg-orange-500">Listen</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class=" flex items-center justify-center py-[100px]">
+        <div class="max-w-[1024px] w-[90%] mx-auto">
+            <div class="max-w-[500px] mx-auto text-center mb-20">
+                <h1 class="text-4xl md:text-[60px] font-extrabold text-primary leading-tight uppercase">The Audio People</h1>
+                <p class="text-base md:text-lg text-gray-200  my-3 ">Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit nulla error est dolores aut voluptatibus repellat temporibus .</p>
+              </div>
+            <div class="flex justify-between flex-col md:flex-row gap-10 md:gap-10">
+                <div class="text-center">
+                    <h1 class="text-[80px] font-bold text-orange-400 leading-tight uppercase">50+</h1>
+                    <p class="text-xl">Episodes</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-[80px] font-bold text-orange-400 leading-tight uppercase">100+</h1>
+                    <p class="text-xl">Hours of Talk</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-[80px] font-bold text-orange-400 leading-tight uppercase">80+</h1>
+                    <p class="text-xl">Guests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" flex items-center justify-center py-[100px] bg-cta-img bg-cover bg-center">
+        <div class="max-w-[1024px] w-[90%] mx-auto">
+            <h1 class="text-4xl font-bold text-[80px] leading-tight uppercase">Don't miss the next episode</h1>
+            <button
+            class="inline-block bg-orange-400 text-white rounded-full px-5 py-2 mt-3 hover:bg-orange-600">
+            Follow Now</button>
+        </div>
+    </section>
+    <section class="flex flex-col  items-center justify-center">
+        <div class="bg-zinc-900 flex items-center justify-between md:px-[25%] py-4  flex-col md:flex-row w-[100%] max-w-200px h-[80px] md:max-h-[55px]">
+
+            <div>
+                <h4 class="text-lg w-fit">&copy; All Rights Reserved</h4>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-between gap-[30px]">
+                    <i class="fa-brands fa-instagram fa-xl cursor-pointer" style="color: #ED7F39"></i>
+                    <i class="fa-brands fa-facebook fa-lg cursor-pointer" style="color: #ED7F39"></i>
+                    <i class="fa-brands fa-youtube fa-xl cursor-pointer" style="color: #ED7F39;"></i>
+                    <i class="fa-brands fa-spotify fa-xl cursor-pointer" style="color: #ED7F39;"></i>
+
+                </div>
+            </div>
+        </div>
+      </section>
+</body>
+
+</html>
